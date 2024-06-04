@@ -15,11 +15,12 @@ const Home = () => {
       headers: {
         "Content-type": "application/json",
       },
-      body: JSON.stringify({ 
-        name, 
-        email, 
-        phone, 
-        message }),
+      body: JSON.stringify({
+        name,
+        email,
+        phone,
+        message,
+      }),
     });
     const data = res.json();
     console.log(data);
@@ -51,7 +52,7 @@ const Home = () => {
           />
         </div>
         <div className="indiDiv">
-          <label htmlFor="phone">Pnone</label>
+          <label htmlFor="phone">Phone</label>
           <input
             type="tel"
             name="phone"
